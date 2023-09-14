@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="LMS Publisher" icon-name="custom:custom14">
+ 
+        <div class="slds-m-around_medium">
+            <p>MessageChannel: TestLMS__c</p>
+        </div>
+ 
+        <!-- Default/basic -->
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" value={myMessage} onchange={handleChange}></lightning-input>
+            <lightning-button label="Publish" onclick={publishMC}></lightning-button>
+        </div>
+ 
+    </lightning-card>
+    
+</template>

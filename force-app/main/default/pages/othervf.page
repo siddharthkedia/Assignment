@@ -1,0 +1,15 @@
+<apex:page sideBar="false" showHeader="true" Rendered="true" tabstyle="Campaign">
+    <apex:sectionheader title="Employees" subtitle="Hero Fincorp" description="we are all Hero FinCorp Employees" help="https://www.google.com"/>
+    <apex:form >
+        <apex:pageblock title="Employees list">
+            <apex:pageblockbuttons location="bottom">
+                <apex:commandbutton value="SAVE" style="colour:white;background:white"/>
+                <apex:commandbutton value="CANCEL"/>
+            </apex:pageblockbuttons>
+            Kanishk<br/>
+            Gurnoor<br/>
+            Jashin<br/>
+            Siddhchad<br/>
+        </apex:pageblock>   
+    </apex:form>   
+</apex:page>

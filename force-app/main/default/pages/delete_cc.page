@@ -1,0 +1,35 @@
+<apex:page controller="Fetch_cc_class">
+    <apex:form >
+        <apex:pageblock title="Employee Info">
+            <apex:pageblocksection title="Enter ID">
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Employee ID"/>
+                    <apex:inputText value="{!EmpID}"/>
+                </apex:pageblockSectionItem><br/>
+            </apex:pageblocksection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Fetch" action="{!fetch_record}"/>
+                <apex:commandButton value="CANCEL" action="{!Cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Employee details">
+                 
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Employee Name"/>
+                    <apex:outputText value="{!EmpName}"/>
+                </apex:pageblockSectionItem><br/>
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Employee Salary"/>
+                    <apex:outputText value="{!Empsalary}"/>
+                </apex:pageblockSectionItem><br/>
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Employee Deptno"/>
+                    <apex:outputText value="{!Empdeptno}"/>
+                </apex:pageblockSectionItem><br/>
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Employee Job"/>
+                    <apex:outputText value="{!Empjob}"/>
+                </apex:pageblockSectionItem><br/>
+            </apex:pageBlockSection>            
+        </apex:pageblock>
+      </apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page sideBar="true" showHeader="true" Rendered="true" tabstyle="Case" renderAs="pdf" action="http://www.bookmyshow.com">
+Kanishk<br/>
+Gurnoor<br/>
+Jashin<br/>
+Siddhchad<br/>
+</apex:page>

@@ -1,0 +1,6 @@
+<aura:component >
+
+<aura:registerEvent name="myevt" type="c:myevent" />
+<lightning:button name="mybutton" label="Fire Event" onclick="{!c.fireevt}" />
+
+</aura:component>

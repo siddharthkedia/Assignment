@@ -1,0 +1,33 @@
+<apex:page CONTROLLER="ArithmeticClass1">
+ ##  <apex:sectionheader title="Calculator" subtitle="Hero Fincorp" /> 
+    <apex:form >
+        <apex:pageblock title="Calculator">
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="ADD" action="{!sum}"/>
+            <apex:commandButton value="SUB" action="{!diff}"/>
+            <apex:commandButton value="DIV" action="{!div}"/>
+            <apex:commandButton value="MUL" action="{!prod}"/>
+            <apex:commandButton value="REM" action="{!rem}"/>
+        </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Calculator" collapsible="false">
+          
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="First Number"/>
+             <apex:inputText value="{!num1}"/>
+          </apex:pageBlockSectionItem><br/>
+          
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Second Number"/>
+             <apex:inputText value="{!num2}"/>
+          </apex:pageBlockSectionItem><br/>
+          
+          <apex:pageBlockSectionItem >
+             <apex:outputLabel value="Result"/>
+             <apex:outputText value="{!res}"/>
+          </apex:pageBlockSectionItem><br/>
+          
+      </apex:pageBlockSection>
+      <apex:commandButton />
+        </apex:pageblock>   
+    </apex:form>   
+</apex:page>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <lightning-input type="text" label="Enter Account Name" value={accountname} onchange={handleonchangename}>
+        </lightning-input>
+        <lightning-input type="text" label="Enter Phone" value={accountphone} onchange={handleonchangephone}>
+        </lightning-input>
+        <lightning-input type="text" label="Enter Billing City" value={billingcity} onchange={handleonchangecity}>
+        </lightning-input>
+        <lightning-input type="text" label="Enter Billing street" value={billingstreet} onchange={handleonchangestreet}>
+        </lightning-input>
+        <lightning-input type="text" label="Enter State" value={billingstate} onchange={handleonchangestate}>
+        </lightning-input>
+        <lightning-input type="text" label="Enter zipcode" value={billingzipcode} onchange={handleonchangezipcode}>
+        </lightning-input>
+        <lightning-button label="initiate search" name="mybutton" onclick={searchaccount}></lightning-button>
+    </lightning-card>
+</template>
